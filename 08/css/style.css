@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+
+.socials {
+	margin: 100px auto;
+	text-align: center;
+}
+
+.socials__item {
+	display: inline-block;
+	margin: 5px;
+}
+
+.socials__link {
+	text-decoration: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+.socials__link:before {
+	content: attr(data-title);
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	-webkit-transform: translate(-50%, -140%);
+	   -moz-transform: translate(-50%, -140%);
+	    -ms-transform: translate(-50%, -140%);
+	     -o-transform: translate(-50%, -140%);
+	        transform: translate(-50%, -140%);
+	background: #3d4371;
+	padding: 5px 10px;
+	border-radius: 4px;
+	color: #fff;
+	opacity: 0;
+}
+
+.socials__link:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -60%);
+	   -moz-transform: translate(-50%, -60%);
+	    -ms-transform: translate(-50%, -60%);
+	     -o-transform: translate(-50%, -60%);
+	        transform: translate(-50%, -60%);
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #3d4371;
+	opacity: 0;
+}
+
+.socials__link:hover:before,
+.socials__link:hover:after {
+	opacity: 1;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 8px;
+	filter: grayscale(90%);
+}
+
+.socials__link:hover .icon,
+.socials__link:focus .icon,
+.socials__link:active .icon {
+	filter: grayscale(0%);
+}
+
+.icon--facebook {
+	background-image: url(../img/facebook.svg);
+}
+.icon--twitter {
+	background-image: url(../img/twitter.svg);
+}
+.icon--google {
+	background-image: url(../img/google.svg);
+}
+.icon--pinterest {
+	background-image: url(../img/pinterest.svg);
+}
+.icon--instagram {
+	background-image: url(../img/instagram.svg);
+}
+.icon--snapchat {
+	background-image: url(../img/snapchat.svg);
+}

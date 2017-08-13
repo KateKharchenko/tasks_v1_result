@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 36px;
+	height: 100%;
+}
+
+header,
+footer {
+	text-align: center;
+	background: #ff0000;
+	padding: 20px;
+	clear: both;
+}
+
+aside {
+	background: #00ff00;
+	width: 20%;
+	padding: 20px;
+	float: left;
+	height: 100%;
+}
+
+main {
+	background: #0000ff;
+	padding: 20px;
+	float: left;
+	width: 56%;
+	margin: 0 2%;
+	height: 100%;
+}
+
+.content:before, .content:after {
+    content: " ";
+    display: table;
+}
+
+.content:after {
+    clear: both;
+}
+
+.content {
+	height: 100%;
+}
